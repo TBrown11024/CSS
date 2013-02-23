@@ -31,19 +31,26 @@
           <div id="content">   
           	<div id="registerContainer">
                 
-                	New to Name Here? Sign Up!
+                	<p>New to Name Here? Sign Up!</p>
+                    <form name="register" action="register.php" method="post">
+   						Username <br /><input type="text" name="username" maxlength="30" /><br />
+    					Password <br /><input type="password" name="pass1" /><br />
+    					Password Again <br /><input type="password" name="pass2" /><br />
+    					<input type="submit" value="Register" class="buttonStandard"/>
+					</form>
                 
-            </div>      
+            </div>   
           	<div id="loginContainer">
             	<div id="loginModule">
-                
-                	<p>Email</p>
-                	<input name="userEmailInput" type="text" id="userEmailInput"/>
+                	<form name="userLogin" action="login.php" method="post" id="userLogin">
+                	<p>Username</p>
+                    <input name="username" type="text" />
                     <p>Password</p>
-                    <input name="userPasswordInput" type="password" id="userPasswordInput" />
+                    <input name="password" type="password" />
                     <input name="userLogin_Confirm" type="submit" id="userLogin_Confirm" value="Log In" class="buttonStandard"/>
-                    
-                </div>                
+                    </form>
+                </div>  
+                <div id="WARNING">WARNING<br />This website is currently under construction. <br /> ANY DATA SUBMITTED IS NOT GUARANTEED TO REMAIN SECURE</div>              
             </div>      		              
             <div id="footer">
 		  
